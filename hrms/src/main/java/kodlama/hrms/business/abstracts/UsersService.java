@@ -4,11 +4,9 @@ import java.util.List;
 
 import kodlama.hrms.core.utilities.results.DataResult;
 import kodlama.hrms.core.utilities.results.Result;
-import kodlama.hrms.entities.concretes.Employer;
+import kodlama.hrms.entities.concretes.Users;
 
-public interface EmployerService {
-
-	DataResult<List<Employer>> getAll();
-	Result Add(Employer employer);
-
+public interface UsersService {
+	DataResult<List<Users>> getAll();
+	Result Add(Users users);
 }
