@@ -19,20 +19,20 @@ import kodlama.hrms.entities.concretes.Users;
 public class UsersControllers {
 
 	@Autowired
-	private UsersService userService;
+	private UsersService usersService;
 
-	public UsersControllers(UsersService userService) {
-		this.userService = userService;
+	public UsersControllers(UsersService usersService) {
+		this.usersService = usersService;
 	}
 
 	@GetMapping("/getall")
 	public DataResult<List<Users>> getAll(){
-		return this.userService.getAll();
+		return this.usersService.getAll();
 	}
 
 	@PostMapping("/add")
 	public Result add(@RequestBody Users users) {
-		return this.userService.Add(users);
+		return this.usersService.Add(users);
 
 	}
 

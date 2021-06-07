@@ -10,11 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import kodlama.hrms.business.abstracts.EmployerService;
-import kodlama.hrms.business.abstracts.JobTitleService;
 import kodlama.hrms.core.utilities.results.DataResult;
 import kodlama.hrms.core.utilities.results.Result;
 import kodlama.hrms.entities.concretes.Employer;
-import kodlama.hrms.entities.concretes.JobTitle;
 
 @RestController
 @RequestMapping("/api/employers")
